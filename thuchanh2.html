@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<input type="number" id="a" placeholder="nhap do F" oninput="nhietdo(this.value)"onchange="nhietdo(this.value)">
+<p id="kq"></p>
 </body>
 </html>
+<script>
+    function nhietdo(x) {
+        x=parseInt(x);
+        document.getElementById("kq").innerHTML=(x-32)/1.8;
+    }
+</script>

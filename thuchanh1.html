@@ -5,15 +5,22 @@
     <title>Title</title>
 </head>
 <body>
+<script>
 
+    function processConfirm(a) {
+        let kq = "";
+        if (a) {
+            kq = "Excellent. We'll play a nice game of chess.";
+        } else {
+            kq = "Maybe later then.";
+        }
+        return kq;
+    }
+
+    let c = confirm("Shall we play a game?");
+    let c1 = processConfirm(c);
+    alert(c1);
+
+</script>
 </body>
 </html>
-<script>
-    function square(x) {
-         x = x * x;
-         return x;
-    }
-    let y = 10;
-    y=square(y);
-    console.log(y);
-</script>
